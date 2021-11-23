@@ -56,9 +56,9 @@ def main():
 
 
     #各種パラメータ設定
-    source_dir = "/home/es1video10/datasets/fashion/muraoka_made/"
-    check_path = "/home/es1video10/pytorch_envs/ad/recon/TRSK8989/fashion/result/checkpoint.pth.tar"
-    output_dir = "/home/es1video10/pytorch_envs/ad/recon/TRSK8989/fashion/result/output"
+    source_dir = ""
+    check_path = "...checkpoint.pth.tar"
+    output_dir = ""
     img_name = "5_796.jpeg"
     width = 240
     height = 320
@@ -107,7 +107,7 @@ def main():
         )
     #train_imgs = glob.glob("/home/es1video10/datasets/fashion/muraoka_made/original/*")
     #dataset = MyDataset(train_imgs, transform, classes, "casual")
-    train_imgs = ["/home/es1video10/datasets/fashion/muraoka_made/original/" + img_name]
+    train_imgs = [source_dir + "/original/" + img_name]
     dataset = MyDatasetPerImage(train_imgs, transform, classes, "casual")
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=False)
 
