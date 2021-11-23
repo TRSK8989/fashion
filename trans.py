@@ -56,9 +56,9 @@ def main():
 
 
     #各種パラメータ設定
-    source_dir = ""
-    check_path = "...checkpoint.pth.tar"
-    output_dir = ""
+    source_dir = "/home/es1video10/datasets/fashion/muraoka_made/"
+    check_path = "/home/es1video10/pytorch_envs/ad/recon/TRSK8989/fashion/result/checkpoint.pth.tar"
+    output_dir = "/home/es1video10/pytorch_envs/ad/recon/TRSK8989/fashion/result/output"
     img_name = "5_796.jpeg"
     width = 240
     height = 320
